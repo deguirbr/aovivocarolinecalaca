@@ -113,6 +113,13 @@ p {
   }
 }
 
+/*
+ * Content
+ */
+
+.aula h2 p {
+  color: #b1b1b1;
+}
 
 /*
  * Cover
