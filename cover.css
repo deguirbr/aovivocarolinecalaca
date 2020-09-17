@@ -27,7 +27,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #000000;
+  background-color: #000000;  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -40,6 +41,11 @@ body {
 
 main {
   background-image: url('images/fundo2.jpg');
+}
+
+h1 {
+  color: #EFCA4B;
+  font-weight: 700;
 }
 
 .cover-container {
