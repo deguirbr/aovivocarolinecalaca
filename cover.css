@@ -53,8 +53,13 @@ main {
 }
 
 h1 {
+  font-size: 2.5rem;;
   color: #EFCA4B;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
 }
 
 p {
