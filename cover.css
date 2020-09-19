@@ -152,8 +152,3 @@ p {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
-
-
-.ytp-watermark {
-  display: none !important;
-}
