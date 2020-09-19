@@ -106,6 +106,35 @@
     </footer>
   </div>
 
+  <!-- Atualizando comentários Facebook -->
+  <script>
+
+    (function() {
+        'use strict';
+    
+        const scheduleFBCommentsUpdate = (iframe, uri) => () => {
+            console.log('Checking for new comments...');
+            iframe.src = uri;
+        }
+    
+        const checkForFBComments = () => {
+            const frames = document.getElementsByTagName('iframe');
+            for (let i = 0; i < frames.length; i++) {
+                const iframe = frames[i];
+                if (iframe.src.startsWith('https://www.facebook.com')) {
+                    console.log('Found facebook iframe. Scheduling update...');
+                    setInterval(scheduleFBCommentsUpdate(iframe, iframe.src), 180000)
+                    return;
+                }
+            }
+    
+            setTimeout(checkForFBComments, 700);
+        }
+    
+        setTimeout(checkForFBComments, 700);
+    })();
+    </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156838279-3"></script>
   <script>
