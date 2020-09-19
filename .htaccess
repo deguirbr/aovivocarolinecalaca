@@ -1,3 +1,3 @@
 RewriteCond %{HTTP_HOST} ^aovivocarolinecalaca.com.br [NC]
-RewriteCond %{HTTPS} off
+RewriteCond %{HTTPS} on
 RewriteRule ^(.*)$ https://aovivocarolinecalaca.com.br/$1 [L,R=301]
