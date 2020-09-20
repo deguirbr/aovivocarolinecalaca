@@ -10,6 +10,11 @@ a:focus {
   border-bottom: 2px solid red;
 }
 
+.botao-compra a,
+.botao-compra a:focus {
+  font-size: 2rem;
+}
+
 a:hover {
   color: black;
   background-color: #EFCA4B;
